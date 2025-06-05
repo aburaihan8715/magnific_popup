@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- magnific css -->
+    <link rel="stylesheet" href="assets/css/magnific.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>magnific popup section</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image_popup">
+        <div class="heading">
+          <h4>image popup with gallery</h4>
+        </div>
+
+        <div class="wrapper">
+          <div class="single_image_popup">
+            <a class="image-link" href="assets/img/portfolio1.jpg">
+              <img src="assets/img/portfolio1.jpg" alt="image" />
+            </a>
+          </div>
+          <div class="single_image_popup">
+            <a class="image-link" href="assets/img/portfolio2.jpg">
+              <img src="assets/img/portfolio2.jpg" alt="image" />
+            </a>
+          </div>
+          <div class="single_image_popup">
+            <a class="image-link" href="assets/img/portfolio3.jpg">
+              <img src="assets/img/portfolio3.jpg" alt="image" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="video_popup">
+        <div class="heading">
+          <h4>image popup with gallery</h4>
+        </div>
+
+        <div class="wrapper">
+          <div class="single_video_popup">
+            <a
+              class="video-link"
+              href="https://www.youtube.com/watch?v=bXbiHJ7jy_0"
+            >
+              <img src="assets/img/portfolio1.jpg" alt="image" />
+            </a>
+          </div>
+          <div class="single_video_popup">
+            <a
+              class="video-link"
+              href="https://www.youtube.com/watch?v=bXbiHJ7jy_0"
+            >
+              <img src="assets/img/portfolio2.jpg" alt="image" />
+            </a>
+          </div>
+          <div class="single_video_popup">
+            <a
+              class="video-link"
+              href="https://www.youtube.com/watch?v=bXbiHJ7jy_0"
+            >
+              <img src="assets/img/portfolio3.jpg" alt="image" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jquery js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- magnific js -->
+    <script src="assets/js/magnific.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('.image-link').magnificPopup({
+          type: 'image',
+          gallery: {
+            enabled: true,
+          },
+        });
+
+        $('.video-link').magnificPopup({
+          type: 'iframe',
+          gallery: {
+            enabled: true,
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
